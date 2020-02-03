@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="index.js"></script>
+        <script>
+            var rpg = new RPG();
+        </script>
+    </head>
+    <body>
+    <h1>Monster hunting!</h1>
+    <table>
+        <thead>
+            <th>Player</th>
+            <th>Monster</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="playerName"></td>
+                <td id="monsterName"></td>
+            </tr>
+            <tr>
+                <td id="playerHp"></td>
+                <td id="monsterHp"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <button type="button" onclick="rpg.initialize()">Initialize data</button>
+    <button type="button" onclick="rpg.attack()">Attack</button>
+    </body>
+</html>
