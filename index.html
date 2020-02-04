@@ -5,28 +5,109 @@
         <script>
             var rpg = new RPG();
         </script>
+        <link href="https://fonts.googleapis.com/css?family=Mansalva|Roboto:100,400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: #17343B;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            }
+            h1 {
+                color: #C1C44D;
+                font-family: 'Mansalva', cursive;
+                letter-spacing: 2px;
+                font-size: 40px;
+            }
+            #container {
+                color: #FFE84A;
+                width: 80%;
+                height: 800px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 100;
+                font-size: 14px;
+                letter-spacing: 2px;
+                padding: 10px;
+            }
+            table {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            thead, tbody {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            th, td {
+                padding: 0 20px 0;
+                width: 150px;
+                align-content: center;
+                text-align: center;
+            }
+            #buttonContainer {
+                margin-top: 50px;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+            }
+            #btnData, #btnAttack {
+                background-color: #739E5A;
+                color: #17343B;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                width: 150px;
+                height: 40px;
+                border: none;
+                margin: 10px 0 10px;
+                padding: 15px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+            #btnData:hover, #btnAttack:hover {
+                background-color: #C1C44D;
+                color: #17343B;
+            }
+            #btnData:focus, #btnAttack:focus {
+                outline: none;
+            }
+        </style>
     </head>
     <body>
-    <h1>Monster hunting!</h1>
-    <table>
-        <thead>
-            <th>Player</th>
-            <th>Monster</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="playerName"></td>
-                <td id="monsterName"></td>
-            </tr>
-            <tr>
-                <td id="playerHp"></td>
-                <td id="monsterHp"></td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <button type="button" onclick="rpg.initialize()">Initialize data</button>
-    <button type="button" onclick="rpg.attack()">Attack</button>
+        <div id="container">
+            <h1>Monster hunting!</h1>
+            <table>
+                <thead>
+                    <th>Player</th>
+                    <th>Monster</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="playerName"></td>
+                        <td id="monsterName"></td>
+                    </tr>
+                    <tr>
+                        <td id="playerHp"></td>
+                        <td id="monsterHp"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="buttonContainer">
+                <button id="btnData" type="button" onclick="rpg.initialize()">Initialize data</button>
+                <button id="btnAttack" type="button" onclick="rpg.attack()">Attack</button>
+            </div>
+        </div>
     </body>
 </html>
