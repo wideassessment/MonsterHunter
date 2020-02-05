@@ -1,20 +1,24 @@
-
+const Monsters = [
+    {name: "", hp: 100, ap: 15, armor:2, monsterText: "The beholder uses Disintigrate, you take ", img: 'img/beholder.svg'},
+    {name: "Beholder", hp: 100, ap: 15, armor:2, monsterText: "The beholder uses Disintigrate, you take ", img: 'img/beholder.svg'}
+]
 
 class RPG {
     constructor() {
+        console.log("const")
         this.initalPlayer =  {name: "Nott the Brave!", hp: 50, ap: 10, armor:0, weapon: 0, playerText: "You stab the monster using your dagger, it takes "}
         this.monster = {
             setHp(newHp) {
                 hp = newHp
             },
-            name: "Beholder", hp: 100, ap: 15, armor:2, monsterText: "The beholder uses Disintigrate, you take "
+            name: "Beholder", hp: 100, ap: 15, armor:2, monsterText: "The beholder uses Disintigrate, you take ", img: 'img/beholder.svg'
         }
 
         this.player = {
             setHp(newHp) {
                 hp = newHp
             },
-            name: "Nott the Brave!", hp: 50, ap: 10, armor:0, weapon: 0, playerText: "You stab the monster using your dagger, it takes "
+            name: "Nott the Brave!", hp: 100, ap: 10, armor:10, weapon: 0, playerText: "You stab the monster using your dagger, it takes ", img: 'img/nottthebrave.svg'
         } 
     }
     get playerName(){
@@ -37,11 +41,14 @@ class RPG {
         this.monster.hp = this.monster.hp - skade
     }
     initialize(){
-        this.player = this.initalPlayer
+        console.log("inside here")
+        document.getElementById("monsterImg").src = this.monster.img
+        document.getElementById("playerImg").src = this.player.img
         document.getElementById("playerName").innerHTML = this.player.name
         document.getElementById("playerHp").innerHTML = this.player.hp
         document.getElementById("monsterName").innerHTML = this.monster.name
         document.getElementById("monsterHp").innerHTML = this.monster.hp
+        
         document.getElementById("playerText").innerHTML = ""
         document.getElementById("monsterText").innerHTML = ""
     }
