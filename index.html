@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-        <script src="js/script.js"></script>
+        <script src="script.js"></script>
         <title>Monster Universe</title>
         <script>
             var rpg = new RPG();
@@ -19,14 +19,15 @@
                     <th>Monster</th>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr id="monster_container">
                         <img id="beholder" src="img/beholder.svg" alt="beholder">
+                        <img id="notthebrave" src="img/nottthebrave.svg" alt="notthebrave">
                     </tr>
-                    <tr>
+                    <tr id="name_container">
                         <td id="playerName"></td>
                         <td id="monsterName"></td>
                     </tr>
-                    <tr>
+                    <tr id="game_container">
                         <td id="playerHp"></td>
                         <td id="monsterHp"></td>
                     </tr>
