@@ -44,6 +44,9 @@ th, td {
     text-align: center;
     text-transform: uppercase;
 }
+#beholder {
+    width: 20vw;
+}
 #buttonContainer {
     margin-top: 50px;
     display: flex;
