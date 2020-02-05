@@ -1,91 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="index.js"></script>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/script.js"></script>
+        <title>Monster Universe</title>
         <script>
             var rpg = new RPG();
         </script>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bangers|Montserrat:400,600,800,900&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                background-color: #C0FF8B;
-                width: 100%;
-                height: 100%;
-                margin: auto;
-            }
-            h1 {
-                color: #E1ACFF;
-                font-family: 'Bangers', cursive;
-                letter-spacing: 2px;
-                font-size: 50px;
-            }
-            #container {
-                color: #855BCC;
-                width: 80%;
-                height: 800px;
-                margin: auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                font-size: 14px;
-                letter-spacing: 2px;
-                padding: 10px;
-            }
-            table {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-            thead, tbody {
-                margin-bottom: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            th, td {
-                padding: 0 20px 0;
-                width: 150px;
-                align-content: center;
-                text-align: center;
-                text-transform: uppercase;
-            }
-            #buttonContainer {
-                margin-top: 50px;
-                display: flex;
-                flex-wrap: nowrap;
-                flex-direction: column;
-            }
-            #btnData, #btnAttack {
-                background-color: #E1ACFF;
-                color: #C0FF8B;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 600;
-                font-size: 10px;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                width: 150px;
-                height: 40px;
-                border: none;
-                margin: 10px 0 10px;
-                padding: 15px;
-                align-items: center;
-                justify-content: center;
-                border-radius: 25px;
-                cursor: pointer;
-            }
-            #btnData:hover, #btnAttack:hover {
-                background-color: #855BCC;
-                color: #E1ACFF;
-            }
-            #btnData:focus, #btnAttack:focus {
-                outline: none;
-            }
-        </style>
     </head>
     <body>
         <div id="container">
@@ -96,6 +19,7 @@
                     <th>Monster</th>
                 </thead>
                 <tbody>
+                    <tr><img id="beholder" src="img/beholder.svg" alt="beholder"></tr>
                     <tr>
                         <td id="playerName"></td>
                         <td id="monsterName"></td>
