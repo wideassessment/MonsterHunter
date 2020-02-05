@@ -13,6 +13,7 @@ class RPG {
             },
             setAll(monster) {
                 this.name= monster.name
+                this.img= monster.img
                 this.hp= monster.hp
                 this.ap= monster.ap
                 this.armor= monster.armor
