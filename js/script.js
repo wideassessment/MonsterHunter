@@ -11,12 +11,10 @@ class RPG {
         }
 
         this.player = {
-            setPlayer(player) {
-                this = player
-            },
             setHp(newHp) {
                 hp = newHp
             },
+            name: "Nott the Brave!", hp: 50, ap: 10, armor:0, weapon: 0, playerText: "You stab the monster using your dagger, it takes "
         } 
     }
     get playerName(){
