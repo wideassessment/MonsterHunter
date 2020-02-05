@@ -25,33 +25,29 @@ h1 {
     letter-spacing: 2px;
     padding: 10px;
 }
-table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-thead, tbody {
+thead {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-th, td {
-    padding: 0 20px 0;
-    width: 150px;
-    align-content: center;
-    text-align: center;
-    text-transform: uppercase;
+#monster_container, #name_container, #game_container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
 }
-#beholder {
+
+#beholder, #notthebrave {
     width: 20vw;
 }
+
+/* buttons */
+
 #buttonContainer {
     margin-top: 50px;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 #btnData, #btnAttack {
     background-color: #E1ACFF;
@@ -64,7 +60,7 @@ th, td {
     width: 150px;
     height: 40px;
     border: none;
-    margin: 10px 0 10px;
+    margin: 0 10px 0;
     padding: 15px;
     align-items: center;
     justify-content: center;
