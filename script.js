@@ -2,7 +2,7 @@
 class RPG {
     constructor() {
         this.monsters = [
-            {id: 0, name: "Mimic", hp: 50, ap: 8, armor:0, text: "The mimic bites you, you take ", img: 'img/beholder.svg'},
+            {id: 0, name: "Mimic", hp: 50, ap: 8, armor:0, text: "The mimic bites you, you take ", img: 'img/mimic.svg'},
             {id: 1, name: "Beholder", hp: 100, ap: 15, armor:2, text: "The beholder uses Disintigrate, you take ", img: 'img/beholder.svg'}
         ]
         this.initalPlayer =  {name: "Nott the Brave!", hp: 50, ap: 10, armor:0, weapon: 0, text: "You stab the monster using your dagger, it takes "}
@@ -25,7 +25,10 @@ class RPG {
             setHp(newHp) {
                 hp = newHp
             },
-            name: "Nott the Brave!", hp: 100, ap: 10, armor:10, weapon: 0, text: "You stab the monster using your dagger, it takes ", img: 'img/nottthebrave.svg'
+            setGold(newGold) {
+                gold = newGold
+            },
+            name: "Nott the Brave!", hp: 100, ap: 10, armor:10, weapon: 0, text: "You stab the monster using your dagger, it takes ", img: 'img/nottthebrave.svg', gold: 0 
         } 
         
     }
@@ -53,6 +56,12 @@ class RPG {
         this.currentMonster++
         this.selectMonster(this.currentMonster)
     }
+    buySword(){
+
+    }
+    buyArmor() {
+
+    }
     attack() {
         const playerDmg = Math.max(0,((Math.floor(Math.random() * this.player.ap+5) + this.player.ap-5) - this.monster.armor))
         const monsterDmg = Math.max(0, ((Math.floor(Math.random() * this.monster.ap+5) + this.monster.ap-5) - this.player.armor))
@@ -61,12 +70,13 @@ class RPG {
         
 
         
-        if(this.player.hp <= 0){
-            alert("Game over!")
+        if(this.player.hp <= 0){ 
             document.getElementById("started").hidden = true
             document.getElementById("btnAttack").hidden = true
             document.getElementById("btnStart").hidden = false
             document.getElementById("btnNext").hidden = true
+            this.player.gold +=5
+            alert("Game over!")
         } 
 
         if(this.monster.hp <= 0)  {
