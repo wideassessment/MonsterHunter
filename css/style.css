@@ -8,6 +8,42 @@ body {
     align-items: center;
     justify-content: center;
 }
+/* center things */
+#started, #shop {
+    width: 60%;
+}
+
+#monster, #player {
+    width: 50vw;
+    text-align: center;
+}
+#titles, #monster_container, #name_container, #game_container, #txt_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#playerName, #playerHp, #playerAp, #playerArmor, #playerText {
+    margin-left: 40px;
+    text-align: center;
+    width: 300px;
+}
+#monsterName, #monsterHp, #monsterAp, #monsterArmor, #monsterText {
+    margin-right: 40px;
+    text-align: center;
+    width: 300px;
+}
+#shop_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#upgrade_sword, #upgrade_armor {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
 
 /* txt */
 h1 {
@@ -23,6 +59,7 @@ p {
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     font-size: 20px;
+    margin-bottom: 60px;
 }
 #titles, #name_container {
     color: #855BCC;
@@ -30,37 +67,17 @@ p {
     font-weight: 800;
     text-transform: uppercase;
 }
-#game_container, #shop_container {
+#game_container, #shop_container, #txt_container {
     color: #855BCC;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
 }
-
-/* game */
-#started, #shop {
-    width: 80%;
-}
-#monster_container, #name_container, #game_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; 
+#playerText, #monsterText {
+    margin-top: 30px;
 }
 
-#shop_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#upgrade_sword, #upgrade_armor {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
 
 /* SVGs */
 #monsterImg, #playerImg {

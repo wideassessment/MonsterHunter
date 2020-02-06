@@ -15,8 +15,8 @@
         <p>Dette superkule spillet er laget av Wa.Works!</p>
             <table id="started" hidden="true">
                 <thead id="titles">
-                    <th>Player</th>
-                    <th>Monster</th>
+                    <th id="player">Player</th>
+                    <th id="monster">Monster</th>
                 </thead>
                 <tbody>
                     <tr id="monster_container">
@@ -39,7 +39,7 @@
                         <td id="playerArmor"></td>
                         <td id="monsterArmor"></td>
                     </tr>
-                    <tr id="game_container">
+                    <tr id="txt_container">
                         <td id="playerText"></td>
                         <td id="monsterText"></td>
                     </tr>
@@ -52,11 +52,11 @@
                 <tbody id="shop_container">
                     <tr>
                         <td id="upgrade_sword">Upgrade sword +1</td>
-                        <td id="sword"><button onclick="rpg.buySword()">buy</button></td>
+                        <td id="sword"><button id="btnBuy" onclick="rpg.buySword()">buy</button></td>
                     </tr>
                     <tr>
                         <td id="upgrade_armor">Upgrade armor +1</td>
-                        <td id="armor"><button onclick="rpg.buyArmor()">buy</button></td>
+                        <td id="armor"><button id="btnBuy" onclick="rpg.buyArmor()">buy</button></td>
                     </tr>
                 </tbody>
             </table>
