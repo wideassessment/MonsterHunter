@@ -51,6 +51,7 @@ class RPG {
         document.getElementById("btnAttack").hidden = false
         document.getElementById("btnStart").hidden = true
         document.getElementById("shop").hidden = true
+        document.getElementById("btnNext").hidden = true
         document.getElementById("monsterImg").src = this.monster.img
         document.getElementById("playerImg").src = this.player.img
         document.getElementById("playerName").innerHTML = this.player.name
@@ -70,12 +71,12 @@ class RPG {
     }
     buySword(){
         this.player.ap +=2
-        alert("You have upgraded your sword")
+        document.getElementById("sword").hidden = true
 
     }
     buyArmor() {
         this.player.armor +=2
-        alert("You have upgraded your armor")
+        document.getElementById("armor").hidden = true
     }
     attack() {
         const playerDmg = Math.max(0,((Math.floor(Math.random() * this.player.ap+5) + this.player.ap-5) - this.monster.armor))
@@ -98,6 +99,8 @@ class RPG {
             document.getElementById("started").hidden = true
             document.getElementById("btnAttack").hidden = true
             document.getElementById("shop").hidden = false
+            document.getElementById("armor").hidden = false
+            document.getElementById("sword").hidden = false
             document.getElementById("btnNext").hidden = false
 
             alert("Congratulations! You killed the dangerous monster.")
