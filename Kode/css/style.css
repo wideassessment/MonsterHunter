@@ -69,7 +69,6 @@ h1 {
     padding: 15px;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
     cursor: pointer;
 }
 #btnStart:focus, #btnAttack:focus, #btnNext:focus {
