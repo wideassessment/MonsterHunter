@@ -24,7 +24,7 @@ h1 {
 }
 
 /* game */
-#started {
+#started, #shop {
     width: 80%;
 }
 #monster_container, #name_container, #game_container {
@@ -32,15 +32,27 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
-    align-content: center;
 }
 
-#game_container {
+#game_container, #shop_container {
     color: #855BCC;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+#shop_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#upgrade_sword, #upgrade_armor {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
 /* SVGs */
@@ -56,7 +68,7 @@ h1 {
     flex-wrap: nowrap;
     flex-direction: row;
 }
-#btnStart, #btnAttack, #btnNext {
+#btnStart, #btnAttack, #btnNext, #btnBuy {
     background-color: #E1ACFF;
     color: #C0FF8B;
     font-family: 'Montserrat', sans-serif;
@@ -74,10 +86,10 @@ h1 {
     border-radius: 25px;
     cursor: pointer;
 }
-#btnStart:hover, #btnAttack:hover, #btnNext:hover {
+#btnStart:hover, #btnAttack:hover, #btnNext:hover, #btnBuy:hover {
     background-color: #855BCC;
     color: #E1ACFF;
 }
-#btnStart:focus, #btnAttack:focus, #btnNext:focus {
+#btnStart:focus, #btnAttack:focus, #btnNext:focus, #btnBuy:focus {
     outline: none;
 }
