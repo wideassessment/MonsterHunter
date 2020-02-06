@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <!--<script src="script.js"></script> -->
+        <title>Forgotten Realms</title>
+         <!--<script>
+            var rpg = new RPG();
+        </script>-->
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers|Montserrat:400,600,800,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- en <h1> tag inneholder en tekst med stor størrelse --> 
+        <h1>Forgotten Realms</h1>
+            <!-- Under opprettes en tabell.
+            thead og th indeholder overskriften i tabellen, men må ikke være med om tabellen ikke skal ha noen overskrift.
+            Alle tabell elementer legges inn i tbody taggen. 
+            En rad defineres med <tr>, mens ett dataelement i tabellen blir laget med <td> --> 
+            <table id="started" hidden="true">
+                <thead id="titles">
+                    <th>Player</th>
+                    <th>Monster</th>
+                </thead>
+                <tbody>
+                    <tr id="FinnRiktigNavnHer_container">
+                        <td><img id="playerImg"></td>
+                        <td><img id="monsterImg"></td>
+                    </tr>
+                    <tr id="FinnRiktigNavnHer_container">
+                        <td id="playerName"></td>
+                        <td id="monsterName"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="buttonContainer">
+            </div>
+        </div>
+    </body>
+</html>
