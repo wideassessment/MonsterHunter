@@ -59,7 +59,6 @@ p {
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     font-size: 20px;
-    margin-bottom: 60px;
 }
 #titles, #name_container {
     color: #855BCC;
@@ -77,7 +76,16 @@ p {
 #playerText, #monsterText {
     margin-top: 30px;
 }
+#playerWon, #monsterWon {
+    color: #855BCC;
+}
 
+#playerCurrentHp, #monsterCurrentHp {
+    color: #855BCC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
 
 /* SVGs */
 #monsterImg, #playerImg {
@@ -87,7 +95,7 @@ p {
 /* buttons */
 
 #buttonContainer {
-    margin-top: 50px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
