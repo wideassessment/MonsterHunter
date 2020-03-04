@@ -44,16 +44,18 @@ class RPG {
         this.player.setAll(this.initalPlayer)
         document.getElementById("playerImg").src = this.player.img
         document.getElementById("playerName").innerHTML = this.player.name
+
+        document.getElementById("btnAttack").hidden = false
+        document.getElementById("btnStart").hidden = true
+        document.getElementById("btnNext").hidden = true
+        document.getElementById("started").hidden = false
+        document.getElementById("shop").hidden = true
         this.selectMonster(0)
         
     }
     selectMonster(id)  {
         this.monster.setAll(this.monsters[id])
-        document.getElementById("started").hidden = false
-        document.getElementById("btnAttack").hidden = false
-        document.getElementById("btnStart").hidden = true
-        document.getElementById("shop").hidden = true
-        document.getElementById("btnNext").hidden = true
+
         document.getElementById("monsterImg").src = this.monster.img
         document.getElementById("playerName").innerHTML = this.player.name
         document.getElementById("playerHp").innerHTML = this.player.hp
