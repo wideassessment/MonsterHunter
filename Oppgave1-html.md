@@ -1,6 +1,6 @@
-#Oppgaver
+# Oppgaver
 
-##Oppstart
+## Oppstart
 1. Sørg for at Visual Studio Code(VSc) er installert på din PC.
 2. Last ned mappen kode fra https://tinyurl.com/w3fwmas 
 3. Åpne mappen i VSc, og åpne filen index.html
@@ -9,7 +9,7 @@
 6. Legg til en <p> tag som inneholder noe tekst. Hint: https://www.w3schools.com/tags/tag_p.asp
 
 
-##Intro til HTML
+## Intro til HTML
 1. Få tabellen til å vises
 2. Legg til bilder på riktig sted. Andrea har laget noen bilder dere kan bruke som ligger i mappen img. Dere kan også finne egne bilder og legge inn i img mappen. Hint, se: https://www.w3schools.com/html/html_images.asp 
 3. Legg til navn på en spiller og et monster
@@ -20,7 +20,7 @@
 8. Gi knapp nr 1 id “btnStart”, knapp nr 2 “btnAttack” og knapp nr 3 “btnNext”
 
 
-##Intro til CSS
+## Intro til CSS
 1. Finn mappen som heter css og åpne filen som heter style.css i VSc. Her finner dere all styling av nettsiden. 
 2. Endre bakgrunnsfarge på selve nettsiden. 
 3. Endre farge på tittelen på nettsiden. 
